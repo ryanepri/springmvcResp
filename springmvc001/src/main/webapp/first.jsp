@@ -4,6 +4,6 @@
     <title>first jsp title</title>
 </head>
 <body>
-inner first Jsp
+inner first.Jsp
 </body>
 </html>

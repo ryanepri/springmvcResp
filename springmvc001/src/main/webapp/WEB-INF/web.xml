@@ -7,23 +7,24 @@
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <!--配置初始化参数,读取springMVC的核心配置文件的位置和名称-->
-        <!--
-        当然,不使用initparam,springMVC会到一个默认路径下读取默认名称的.xml配置文件
-        默认路径为/WEB-INF/
-        默认配置文件名为:<servlet-name>-servlet.xml
-        我们暂时不推荐这种方式
-        -->
-        <!-- <init-param>
-             <param-name>contextConfigLocation</param-name>
-             <param-value>classpath:dispatcherServlet-servlet.xml</param-value>
-         </init-param>-->
+
+        <!--配置前端控制器-->
+        <!--读取springmvc的配置文件-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc.xml</param-value>
+        </init-param>
+        <!--启动立即初始化servelet-->
         <load-on-startup>1</load-on-startup>
     </servlet>
-    <!--配置dispatcherServlet的映射路径为 / 包含全部的servlet, JSP除外-->
+
+
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
+        <!--匹配资源 除了jsp-->
         <url-pattern>/</url-pattern>
+        <!--匹配资源 包括jsp-->
+        <!--<url-pattern>/*</url-pattern>-->
     </servlet-mapping>
 
 </web-app>
