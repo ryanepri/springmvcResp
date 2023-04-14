@@ -12,7 +12,8 @@ public class MyController01 {
     @RequestMapping("/first.do")
     public String firstController() {
         System.out.println("inner firstController method");
-        return "/first.jsp";
+//        return "WEB-INF\\view\\first.jsp";
+        return "first";
     }
 
 }
