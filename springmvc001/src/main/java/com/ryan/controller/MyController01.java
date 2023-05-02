@@ -31,4 +31,23 @@ public class MyController01 {
         return "img";
     }
 
+
+    /**
+     * 测试RequestMapping中不写/
+     *
+     * @return
+     */
+    @RequestMapping(path = {"/test1.do", "/test1.action","/test001"})
+    public String test1Controller() {
+        System.out.println("inner testController111 method");
+        return "test";
+    }
+
+    @RequestMapping(value = {"/test2.do", "/test2.action","/test002"})
+    public String test2Controller() {
+        System.out.println("inner testController222 method");
+        return "test";
+    }
+
+
 }
