@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>first jsp title</title>
+    <title>success jsp title</title>
 </head>
 <body>
-inner first.Jsp 1132
+inner success.Jsp
 </body>
 </html>

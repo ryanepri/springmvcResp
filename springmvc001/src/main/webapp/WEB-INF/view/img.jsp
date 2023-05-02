@@ -1,9 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>first jsp title</title>
+    <title>img jsp title</title>
 </head>
 <body>
-inner first.Jsp 1132
+inner img.Jsp 1132
+<div>
+    <img src="static/img/img.png">
+</div>
+
 </body>
 </html>
