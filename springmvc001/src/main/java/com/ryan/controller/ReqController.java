@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller()
-@RequestMapping("/reqq")
-public class MyController03 {
+@RequestMapping("/req")
+public class ReqController {
 
     @RequestMapping
     public String innerController() {
         System.out.println("inner reqController method");
-        return "reqq";
+        return "req";
     }
 
     @RequestMapping(value = "/getRequest", method = RequestMethod.GET)

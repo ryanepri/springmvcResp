@@ -10,7 +10,7 @@ inner req.Jsp 1132
 </form>
 
 <form action="req/getRequest" method="post">
-    <input type="submit" value="get接口post提交">
+    <input type="submit" value="get接口post提交405错误">
 </form>
 
 

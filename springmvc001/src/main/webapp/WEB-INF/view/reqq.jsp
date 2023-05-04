@@ -5,16 +5,21 @@
 </head>
 <body>
 inner reqqqqq.Jsp 1132
-<form action="req/getRequest" method="get">
-    <input type="submit" value="get提交">
+
+get
+<form action="reqq/getRequest" method="get">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="submit" value="get 提交">
 </form>
 
-<form action="req/getRequest" method="post">
-    <input type="submit" value="get接口post提交405错误">
+headerRequest
+<form action="reqq/headerRequest" method="get">
+    <input type="submit" value="get headers 提交">
 </form>
 
-
-<form action="req/postRequest" method="post">
+post
+<form action="reqq/postRequest" method="post">
     <input type="submit" value="post提交">
 </form>
 </body>
