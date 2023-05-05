@@ -1,1 +1,12 @@
 test
+学习内容：
+    springmvc001：：
+        学习了mvc项目的搭建。
+        相关文档的配置。
+        资源的放行。
+        执行流程以及做出的优化（前后缀、资源放行。
+        @RequestMapping注解
+        @PathVariabld注解
+        @RequestParam注解
+        简单的参数获取(int string)
+    springmvc002：：
