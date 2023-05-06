@@ -1,19 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <html>
 <body>
-<h2>receive</h2>
+<h2>receive2 pojo</h2>
 </body>
 
-
-receive
-<form action="pojo/receive" method="get">
-    <input type="text" name="uid">
-    <input type="text" name="uname">
-    <input type="submit" value="提交">
-</form>
-
-receiveData
-<form action="pojo/getDataByPojo" method="get">
+receiveData-pojo
+<form action="pojo/getDataByPojo2" method="get">
     str类型
     <p>姓名:<input type="text" name="pname"></p>
     <p>年龄:<input type="text" name="page"></p>
