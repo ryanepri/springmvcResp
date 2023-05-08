@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springmvc002" />
         <module name="springmvc001" />
+        <module name="springmvc003" />
       </profile>
     </annotationProcessing>
   </component>

@@ -9,4 +9,21 @@ test
         @PathVariabld注解
         @RequestParam注解
         简单的参数获取(int string)
+
+
     springmvc002：：
+        进一步学习了注解
+            @RequestMapping
+            @PathVariable
+            @RequestParam
+            @RequestHeader
+            @CookieValue
+        参数注入：
+            int string
+            pojo
+            date（注解法、配置转换器法。
+            List
+            Map
+
+     springmvc003：：
+        mvc响应void

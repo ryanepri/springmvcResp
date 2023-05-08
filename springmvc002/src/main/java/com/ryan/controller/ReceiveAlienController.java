@@ -18,6 +18,6 @@ public class ReceiveAlienController {
     @RequestMapping("getDC")
     public String myMethod2(Alien alien) {
         System.out.println(alien.getDc());
-        return "receive alien success";
+        return "receive alien dc success";
     }
 }
