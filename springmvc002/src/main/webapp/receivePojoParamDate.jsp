@@ -1,10 +1,10 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <html>
 <body>
-<h2>receive2 pojo</h2>
+<h2>receivePojoParamDate</h2>
 </body>
 
-receiveData-pojo
+receivePojoParamDate
 <form action="pojo/getDataByPojo2" method="get">
     str类型
     <p>姓名:<input type="text" name="pname"></p>
