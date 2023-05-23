@@ -5,13 +5,13 @@
 
 <mapper namespace="com.ryan.mapper.GamerMapper">
 
-    <select id="getAll" resultType="com.ryan.pojo.Gamer">
-        select * from user
+    <select id="selectAll" resultType="com.ryan.pojo.Gamer">
+        select * from gamer
     </select>
 
 
     <select id="findUserByUnamePwd" resultType="com.ryan.pojo.Gamer">
-        select * from user where username = #{param1} and password = #{param2}
+        select * from gamer where username = #{param1} and password = #{param2}
     </select>
 
 </mapper>

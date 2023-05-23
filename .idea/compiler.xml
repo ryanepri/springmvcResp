@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springmvcA" />
+        <module name="springmvcB" />
         <module name="springmvc002" />
         <module name="springmvc001" />
         <module name="springmvc003" />

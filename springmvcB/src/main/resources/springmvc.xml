@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+">
+
+
+    <!--扫描controller-->
+    <context:component-scan base-package="com.ryan.controller"></context:component-scan>
+
+    <!--这里配置三大组件-->
+    <mvc:annotation-driven/>
+
+    <!--视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean>
+
+    <!--配置静态资源放行-->
+    <mvc:resources mapping="/upload/**" location="/upload/"></mvc:resources>
+    <!--<mvc:resources mapping="/js/**" location="/js/"></mvc:resources>-->
+    <!--<mvc:resources mapping="/css/**" location="/css/"></mvc:resources>-->
+    <!--<mvc:resources mapping="/img/**" location="/img/"></mvc:resources>-->
+    <!--<mvc:resources mapping="/static/**" location="/static/"></mvc:resources>-->
+
+    <!--文件上传解析组件-->
+    <!--  id == multipartResolver 一字不差。因为这是mvc默认,违背则找不到该组件。  -->
+    <!--该组件的作用就是将前端的formData传给控制层单元的fileUpload解析MultipartFile形参的时候可以转化成功.-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--<property name="maxUploadSize" value="2097152"></property>-->
+    </bean>
+
+
+</beans>
