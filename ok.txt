@@ -25,5 +25,14 @@ test
             List
             Map
 
-     springmvc003：：
+    springmvc003：：
         mvc响应void
+
+    springmvcA::
+        ssm mvc整合mybatis 测试
+
+    springmvcB::
+        ssm mvc整合mybatis 文件上传到本地 demo1
+
+    springmvcE::
+        ssm mvc整合mybatis 文件上传到文件管理服务器（分布式
