@@ -3,14 +3,14 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.ryan.mapper.GamerMapper">
+<mapper namespace="com.mapper.com.ryan.GamerMapper">
 
-    <select id="getAll" resultType="com.ryan.pojo.Gamer">
+    <select id="getAll" resultType="com.pojo.com.ryan.Gamer">
         select * from user
     </select>
 
 
-    <select id="findUserByUnamePwd" resultType="com.ryan.pojo.Gamer">
+    <select id="findUserByUnamePwd" resultType="com.pojo.com.ryan.Gamer">
         select * from user where username = #{param1} and password = #{param2}
     </select>
 

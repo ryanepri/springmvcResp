@@ -11,6 +11,7 @@
         <module name="springmvcB" />
         <module name="springmvc002" />
         <module name="springmvc001" />
+        <module name="springmvcE" />
         <module name="springmvc003" />
       </profile>
     </annotationProcessing>

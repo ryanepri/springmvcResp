@@ -1,6 +1,6 @@
 test
 学习内容：
-    springmvc001：：
+    springmvc001::
         学习了mvc项目的搭建。
         相关文档的配置。
         资源的放行。
@@ -11,7 +11,7 @@ test
         简单的参数获取(int string)
 
 
-    springmvc002：：
+    springmvc002::
         进一步学习了注解
             @RequestMapping
             @PathVariable
@@ -25,7 +25,7 @@ test
             List
             Map
 
-    springmvc003：：
+    springmvc003::
         mvc响应void
 
     springmvcA::
@@ -34,5 +34,10 @@ test
     springmvcB::
         ssm mvc整合mybatis 文件上传到本地 demo1
 
+
+    ☆ssm + tomcat 来单独管理图片上传
     springmvcE::
         ssm mvc整合mybatis 文件上传到文件管理服务器（分布式
+    配合tomcat-FileUploadService::
+        修改tomcat配置文件
+
