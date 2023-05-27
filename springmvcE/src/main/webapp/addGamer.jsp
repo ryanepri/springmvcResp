@@ -49,9 +49,13 @@
                             //接收后台响应的信息
                             console.log(result)
                             alert(result.message)
-                            //图片回显
+                            //回显 图片
                             // $("#avaterImg").attr("src", "upload/" + result.newFileName);
                             $("#avaterImg").attr("src", "http://192.168.31.88:8888/upload/" + result.newFileName);
+
+                            // 回显 文件类型、文件名 将其放入form表单
+                            $("#photoInput").val(result.newFileName)
+                            $("#filetypeInput").val(result.filetype)
                         },
                         //
                         // 进度条
@@ -83,12 +87,12 @@
 </head>
 <body>
 
-<form action="gamer/add" method="get">
+<form action="addGamer" method="get">
     <h1>*游戏用户注册</h1>
-    <p>账号<input type="text" name="id"></p>
-    <p>昵称<input type="text" name="username"></p>
+    <p>用户名<input type="text" name="username"></p>
+    <p>昵称<input type="text" name="nickname"></p>
     <p>密码<input type="password" name="password"></p>
-    <p>
+    <div>
         头像:
         <br/>
         <input id="upload-file" type="file"><br/>
@@ -101,13 +105,15 @@
                 alt="您还未上传图片"
         ><br/>
         <%--进度条--%>
-    <div class="progress">
-        <div></div>
+        <div class="progress">
+            <div></div>
+        </div>
+        <a id="uploadButton" href="javascript:void(0)">立即上传</a>
+        <%--使用隐藏的输入框存储文件名称和文件类型--%>
+        <input id="photoInput" type="hidden" name="photo">
+        <input id="filetypeInput" type="hidden" name="filetype">
     </div>
-    <a id="uploadButton" href="javascript:void(0)">立即上传</a>
 
-
-    </p>
 
     <p><input type="submit" value="注册"></p>
 </form>

@@ -13,4 +13,10 @@ import java.util.List;
 public interface GamerService {
     List<Gamer> getAll();
 
+    List<Gamer> selectGamer();
+
+
+    //回填Gamer
+    Integer insertGamer(Gamer gamer);
+
 }

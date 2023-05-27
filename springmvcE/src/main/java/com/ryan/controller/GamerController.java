@@ -21,4 +21,16 @@ public class GamerController {
         return gamerService.getAll();
     }
 
+
+    @RequestMapping("addGamer")
+    public String addGamer(Gamer gamer) {
+        //id, username, password, nickname, photo, filetype
+        Integer gamerid = gamerService.insertGamer(gamer);
+
+
+        System.out.println("gamer::" + gamer);
+        return "/html/showGamer.html";
+
+    }
+
 }

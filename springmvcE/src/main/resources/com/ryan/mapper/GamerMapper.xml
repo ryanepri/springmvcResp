@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ryan.mapper.GamerMapper">
+
+    <select id="selectAll" resultType="com.ryan.pojo.Gamer">
+        select * from gamer
+    </select>
+
+
+    <select id="findUserByParam" resultType="gamer">
+        <!--select * from gamer where username = #{param1} and password = #{param2}-->
+        select * from gamer where 1=1
+        <if test="id != null">
+            and id = #{id}
+        </if>
+        <if test="username != '' and username != null">
+            and username = #{username}
+        </if>
+        <if test="password != '' and password != null">
+            and password = #{password}
+        </if>
+        <if test="nickname != null">
+            and nickname = #{nickname}
+        </if>
+        <if test="photo != '' and photo != null">
+            and photo = #{photo}
+        </if>
+        <if test="filetype != '' and filetype != null">
+            and filetype = #{filetype}
+        </if>
+    </select>
+
+
+    <insert id="insertGamer" parameterType="com.ryan.pojo.Gamer" keyProperty="id" useGeneratedKeys="true">
+        <!--id, username, password, nickname, photo, filetype-->
+        insert into gamer values(DEFAULT ,#{username},#{password},#{nickname},#{photo},#{filetype})
+    </insert>
+
+</mapper>

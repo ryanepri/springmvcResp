@@ -44,6 +44,7 @@ public class FileUploadController {
             map.put("message", "文件类型必须是.png");
             return map;
         }
+        map.put("filetype",extendsName);
 
 
         //新的文件名
