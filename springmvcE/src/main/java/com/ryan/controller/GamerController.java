@@ -38,28 +38,24 @@ public class GamerController {
 
 
     @RequestMapping("login.action")
-    @ResponseBody
-    public Map<String, String> gamerLogin(String username, String password) {
+    public String gamerLogin(String username, String password) {
+
+        System.out.println("inner usercontroller gamerlogin method");
         //处理从前端得到的数据
         Gamer gamer = new Gamer();
         gamer.setUsername(username);
         gamer.setPassword(password);
         System.out.println("前端拿来的数据gamer::" + gamer);
 
-        //准备json
-        HashMap<String, String> map = new HashMap<String, String>();
-
         //查询gamer
         List<Gamer> gamers = gamerService.selectGamer(gamer);
 
 
         if (gamers != null && gamers.size() == 1) {
-            map.put("gamer", gamers.get(0).toString());
-            return map;
+            return "success.jsp";
         }
 
-        map.put("error", "没有该用户");
-        return map;
+        return "fail.jsp";
     }
 
 }

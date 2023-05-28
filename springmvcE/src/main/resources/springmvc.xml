@@ -49,4 +49,12 @@
     </bean>
 
 
+    <!--注册拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/login.action"/>
+            <bean id="myInterceptor" class="com.ryan.interceptor.MyInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>
