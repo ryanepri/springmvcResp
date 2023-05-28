@@ -16,7 +16,7 @@ public class GamerController {
     private GamerService gamerService;
 
     @ResponseBody
-    @RequestMapping("all")
+    @RequestMapping("getAllGamer")
     public List<Gamer> myMethod1() {
         return gamerService.getAll();
     }
@@ -29,8 +29,8 @@ public class GamerController {
 
 
         System.out.println("gamer::" + gamer);
-        return "/html/showGamer.html";
-
+//        return "/html/showGamer.html";
+        return "redirect:/showGamer2.jsp";
     }
 
 }

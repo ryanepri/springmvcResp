@@ -1,0 +1,42 @@
+28-May-2023 09:18:40.937 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.73
+28-May-2023 09:18:40.942 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Feb 27 2023 15:33:40 UTC
+28-May-2023 09:18:40.947 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.73.0
+28-May-2023 09:18:40.948 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+28-May-2023 09:18:40.949 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+28-May-2023 09:18:40.949 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+28-May-2023 09:18:40.949 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     C:\Program Files\Java\jre1.8.0_333
+28-May-2023 09:18:40.949 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_333-b02
+28-May-2023 09:18:40.949 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+28-May-2023 09:18:40.949 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer
+28-May-2023 09:18:40.950 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer
+28-May-2023 09:18:40.950 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\conf\logging.properties
+28-May-2023 09:18:40.950 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-May-2023 09:18:40.950 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+28-May-2023 09:18:40.951 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-May-2023 09:18:40.954 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+28-May-2023 09:18:40.954 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer
+28-May-2023 09:18:40.955 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer
+28-May-2023 09:18:40.956 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\temp
+28-May-2023 09:18:40.960 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.2]加载了基于APR的Apache Tomcat本机库[1.2.36]。
+28-May-2023 09:18:40.972 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+28-May-2023 09:18:40.973 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+28-May-2023 09:18:40.979 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1t  7 Feb 2023]
+28-May-2023 09:18:41.384 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8888"]
+28-May-2023 09:18:41.435 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[702]毫秒内初始化
+28-May-2023 09:18:41.479 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+28-May-2023 09:18:41.480 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.73]
+28-May-2023 09:18:41.495 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\docs]
+28-May-2023 09:18:42.026 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[176]毫秒。
+28-May-2023 09:18:42.078 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\docs]的部署已在[583]毫秒内完成
+28-May-2023 09:18:42.091 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\examples]
+28-May-2023 09:18:42.490 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\examples]的部署已在[399]毫秒内完成
+28-May-2023 09:18:42.499 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\host-manager]
+28-May-2023 09:18:42.549 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\host-manager]的部署已在[51]毫秒内完成
+28-May-2023 09:18:42.557 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\manager]
+28-May-2023 09:18:42.611 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\manager]的部署已在[53]毫秒内完成
+28-May-2023 09:18:42.631 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\ROOT]
+28-May-2023 09:18:42.667 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\ROOT]的部署已在[36]毫秒内完成
+28-May-2023 09:18:42.678 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\upload]
+28-May-2023 09:18:42.718 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\80793\Desktop\mvc\springmvcResp\FileUploadServer\webapps\upload]的部署已在[40]毫秒内完成
+28-May-2023 09:18:42.734 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8888"]
+28-May-2023 09:18:42.764 信息 [main] org.apache.catalina.startup.Catalina.start [1328]毫秒后服务器启动
