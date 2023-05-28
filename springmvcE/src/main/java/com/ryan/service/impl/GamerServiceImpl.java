@@ -41,5 +41,9 @@ public class GamerServiceImpl implements GamerService {
         return gamerMapper.insertGamer(map);
     }
 
+    public List<Gamer> selectGamer(Gamer gamer) {
+        return gamerMapper.selectGamer(gamer);
+    }
+
 
 }

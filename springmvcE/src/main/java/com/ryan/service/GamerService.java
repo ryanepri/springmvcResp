@@ -19,4 +19,5 @@ public interface GamerService {
     //回填Gamer
     Integer insertGamer(Gamer gamer);
 
+    List<Gamer> selectGamer(Gamer gamer);
 }

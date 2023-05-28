@@ -12,4 +12,5 @@ public interface GamerMapper {
 
     Integer insertGamer(Map<String, Object> map);
 
+    List<Gamer> selectGamer(Gamer gamer);
 }
